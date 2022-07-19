@@ -2,11 +2,11 @@
 
 # Team Members
 
-Dipesh Singh
-Abhra Mondal
-Rajesh Pradhan
-Sudhir Nandane
-Ashutoshlakshakar
+*Dipesh Singh
+*Abhra Mondal
+*Rajesh Pradhan
+*Sudhir Nandane
+*Ashutoshlakshakar
 
 # Project Website
 
