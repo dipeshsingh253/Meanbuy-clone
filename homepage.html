@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #slideshow>img{
+            margin-top: 100px;
+            /* border: 1px solid red; */
+            margin-left: 10px;
+        }
+        #hr{
+            font-size: 20px;
+            margin-top: 20px;
+            
+        }
+        button{
+           color: #f18e2f;
+            width: 15px;
+            height: 30px;
+            margin-top: 270px;
+            border: 1px solid white;
+            font-size: 30px;
+        }
+        
+        #flex1{
+            display: flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="flex1">
+    <button><</button><div id="slideshow"></div><button>></button></div>
+    <div id="hr">Fast moving product___________________________________________________________________________________________________________________</div>
+    
+    
+</body>
+</html>
+<script>
+    let  cars=[
+{
+    image_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/freedom2222.webp",
+},
+
+
+{
+image_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/bluetooth2022.webp",
+},
+
+
+{
+image_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/womenswatches2022.webp",
+},
+
+
+{
+image_url:"https://d64lkarmo2mrq.cloudfront.net/img/home/nordic2022.webp",
+},
+
+]
+
+localStorage.setItem("images",JSON.stringify(cars))
+
+
+    function slideshow(){
+        images=JSON.parse(localStorage.getItem("images"))
+       // console.log(images)
+        container=document.getElementById("slideshow");
+        i=0;
+
+        setInterval(function(){
+            if(i===4){
+                i=0;
+
+            }
+            let img=document.createElement("img");
+            img.src=images[i].image_url;
+           // console.log(images[i].image_url)
+            container.innerHTML=null;
+            container.append(img);
+            i++;           
+        },4000)
+    
+}
+slideshow();
+
+
+</script>
