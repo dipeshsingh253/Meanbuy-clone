@@ -17,4 +17,10 @@ index.html ==> Admin Panel
     #node server.js  // this will run the server.js 
     
     
+#How to get Products Data ?
+
+=> navigate to db.json file in backend folder
+=> you can directly copy the data and use it if you needed at some point 
+=> otherwise you can also create a callback function that returns the product data and then call it, whenever you need it.
+
 
