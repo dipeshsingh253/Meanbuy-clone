@@ -1,0 +1,9 @@
+#parent{
+    border: 1px solid #d2d2d2;
+    display: flex;
+}
+
+#header{
+    color: #f79429;
+}
+
