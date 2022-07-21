@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <style>
+             *{
+                margin: 0px;
+                padding:0px;
+            }
+            
+           #navbar{
+               height: 110px;
+               width: 100%;
+               /* border: 1px solid red; */
+               box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+           } 
+          #nav_box1{
+              display: flex;
+              gap: 20px;
+              /* border: 1px solid green; */
+              height: 70px;
+          }
+          #main_logo{
+              height: 58px;
+              width: 185px;
+              margin-top: 10px;
+              margin-left: 16px;
+          }
+          #search_box{
+              height: 25px;
+              width: 290px;
+              margin-top: 30px;
+              border: 1px solid rgb(218, 218, 218);
+              margin-left: 20px;
+              padding-left: 10px;
+              display: flex;
+          }
+          #search_box>input{
+              height: 100%;
+              width: 100% ;
+              border: none;
+              outline: inherit;
+          }
+          #search_box>img{
+              height: 28px;
+              width: 27px;
+              /* margin-left: 5px; */
+              /* margin-top: 1px; */
+              margin-right: 3px;
+              cursor: pointer;
+              margin-bottom: 2px;
+          }
+          #small_text{
+              display: flex;
+              margin-left: 340px;
+              margin-top: 20px;
+          }
+          .s_text{
+            height: 10px;
+            border-right: 1px solid black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 4px;
+            cursor: pointer;
+          }
+          .s_text:hover{
+              text-decoration-line: underline;
+          }
+          #s_text2{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+          }
+          #s_text2:hover{
+              text-decoration-line: underline;
+          }
+          #cart_logo{
+              height: 20px;
+              width: 20px;
+              margin-top: 25px;
+              margin-left: 10px;
+          }
+          #cart_count{
+              margin-top: 20px;
+              margin-left: -19px;
+              font-size: 10px;
+          }
+          #cart_logo2{
+              height: 20px;
+              width: 20px;
+              margin-top: 25px;
+              margin-left: 10px;
+          }
+          #nav_box2{
+              display: flex;
+              gap: 30px;
+          }
+          #nav2_text1{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            margin-left: 80px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          #nav2_text2{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 80px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          .nav2_text{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          #result{
+              height: 610px;
+              width: 100%;
+              /* border: 1px solid red; */
+              overflow: scroll;
+              display: flex;
+          }
+          #result_box{
+              height: 400px;
+              width: 300px;
+              border: 1px solid green;
+              margin: auto;
+              margin-top: 30px;
+
+          }
+          #poster{
+              height: 70%;
+              width: 100%;
+          }
+          #left_box{
+              margin-top: 30px;
+              height: 1500px;
+              width: 15%;
+              border-right: 1px solid rgb(218, 218, 218);
+          }
+          
+          #container{
+              /* width: 80%; */
+              /* height: auto; */
+              /* border: 1px solid red; */
+              margin-top: 30px;
+              display: grid;
+              grid-template-columns: repeat(3,1fr);
+              grid-template-rows: auto;
+              /* gap: 20px; */
+              margin-left: 30px;
+          }
+          #right_box{
+              margin-top: 30px;
+          }
+          #test{
+              height: 30px;
+              width: 1050px;
+              /* border: 1px solid black; */
+              display: flex;
+              margin-left: 20px;
+              
+
+          }
+          #test>p{
+            /* height: 10px; */
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            /* margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px; */
+            color: rgb(51, 51, 51);
+            margin-top: 7px;
+          }
+          #test>h3{
+              color: rgb(250, 128, 114);
+              font-family: 'Roboto', sans-serif;
+              margin-left: 9px;
+              margin-top: 6px;
+          }
+
+       #sub_menu{
+           width: 260px;
+           height: 190px;
+           border: 1px solid rgb(247, 148, 29);
+           margin-top: 10px;
+           background-color: white;
+           /* margin-right: 70px; */
+           position: absolute;
+           margin-left: -220px;
+           margin-top: 10px;
+       }
+       #sub_menu{
+           display: none;
+       }
+       #order_text{
+        border: none;
+           height: 40px;
+           width: 220px;
+           background-color: rgb(247, 148, 29);
+           color: white;
+           cursor: pointer;
+           font-size: 20px;
+           margin-top: -10px;
+           margin-left: 20px;
+       }
+       #signout_text{
+        border: none;
+           height: 40px;
+           width: 220px;
+           background-color: rgb(247, 148, 29);
+           color: white;
+           cursor: pointer;
+           font-size: 20px;
+           margin-top: 10px;
+           margin-left: 20px;
+       }
+       #menu:hover #sub_menu{
+           display: block;
+           /* position: absolute; */
+       }
+
+       #Sign_text{
+           text-align: center;
+           /* margin-left: 18px; */
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        color: rgb(247, 148, 29);
+        margin-top: 30px;
+       }
+       #categories_box{
+            height: 345px;
+            width: 1200px;
+            border-bottom: 1px solid;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          position: relative;
+           background-color: white;
+           margin-top: 15px;
+        }
+        
+        .small_box{
+          height: 100%;
+          width: 12.2%;
+          
+        }
+        .big_text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            text-decoration: underline;
+            font-weight: 200;
+            margin-left: 20px;
+            margin-top: 25px;
+            color: black;
+        }
+        .small_text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: 400;
+            cursor: pointer;
+           
+        }
+        .small_text:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        #categories_box{
+            display: none;
+        }
+        #main:hover #categories_box{
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <!-- box1 start here.... -->
+      <!-- <div id="nav_box1">
+        <img id="main_logo" src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png">
+        <div id="search_box">
+            <input id="query" placeholder="Search" type="text">
+            <img id="search_button" src="https://icon-library.com/images/search-for-icon/search-for-icon-14.jpg">
+        </div>
+
+        <div id="small_text">
+        <div class="s_text">Seller's Corner</div>
+        <div class="s_text">Feedback</div>
+        <div class="s_text">Blog</div>
+        <div id="s_text2">Delivery Info</div>
+        </div>
+       <img id="cart_logo" src="Picsart_22-07-20_21-36-09-062.png">
+       <p id="cart_count">0</p>
+       <img id="cart_logo2" src="Picsart_22-07-20_22-01-04-131.png">
+      </div> -->
+    <!-- box2 start here...... -->
+      <!-- <div id="nav_box2">
+          <p id="nav2_text1">Categories</p>
+          <p id="nav2_text2">Flash sell</p>
+          <p class="nav2_text">Best sell</p>
+          <p class="nav2_text">Shop by Brand</p>
+          <p class="nav2_text">Trending</p>
+          <p class="nav2_text">New Arrivals</p>
+      </div> -->
+    </div>
+
+
+    <!-- results div start here........ -->
+
+    <div id="result">
+       <div id="left_box"></div>
+
+       <div id="right_box">
+
+           <div id="test">
+               <p id="result_text"></p>
+               <h3 id="search_text"></h3>
+           </div>
+           <div id="container">
+           
+           </div>
+
+       </div>
+
+    </div>
+</body>
+</html>
+<script type="module">
+ 
+ import {navbar} from "./navbar.js";
+ document.getElementById("navbar").innerHTML=navbar();
+
+  let  products = [
+      {
+        "name": "3D BENZ AMG WHEEL WATCH",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8zXzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8yXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "8999",
+        "offer": "21",
+        "rating": "1.8",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "1 x 3D Mercedes AMG Wheel watch in the high-quality package.",
+        "features": "3D BENZ AMG WHEEL WATCH, Stainless steel case , Sapphire glass , Stainless steel band",
+        "category": "watch",
+        "id": 1
+      },
+      {
+        "name": "KOSPET Optimus 2 Smartwatch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzJfMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzRfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "21999",
+        "offer": "37",
+        "rating": "4.3",
+        "avaliable": true,
+        "summary": "Dual chip, Helio P22+PAR2822: Thanks to this dual-chip design mode, the computing efficiency of the watch is greatly improved, the movement data collection is more accurate, and the power consumption of the Bluetooth connection between the watch and the mobile phone is greatly reduced, and the stability of the Bluetooth connection is greatly improved. # Two 4G standby modes, Android mode+ Lite Mode: Android Mode: A high-performance version of the Android watch, which can turn on all functions such as video, games, camera, music, social, and calling # Lite Mode: Lite version of the call watch: only supports localized applications such as calls, text messages, sports and fitness",
+        "includes": "KOSPET Optimus 2 Smartwatch (4GB RAM + 64GB ROM)",
+        "features": "Kospet , Kospet Optimus 2, Material Silicon, 1.6 inch",
+        "category": "watch",
+        "id": 2
+      },
+      {
+        "name": "LOKMAT APPLLP 6 Smart Watch 2+16GB",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9HcmVlbl9uXzJfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9HcmVlbl9uXzNfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "26999",
+        "offer": "21",
+        "rating": "4.8",
+        "avaliable": true,
+        "summary": "LOKMAT- APPLLP 6 Android Smartwatch supports 4G/WIFI network connections.  #  After inserting the SIM card (not included), you can make and receive calls, send text messages, or surf the internet any time and anywhere. # video entertainment, photo taking, step counting, heart rate monitoring, social entertainment, blood oxygen detection",
+        "includes": "LOKMAT APPLLP 6 Smart Watch 2+16GB",
+        "features": "LOKMAT , TPU+Microfiber Leather, 830mAh",
+        "category": "watch",
+        "id": 3
+      },
+      {
+        "name": "LIGE LG0160 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9TaWx2ZXJfbl8yXzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9TaWx2ZXJfbl8zXzQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "5999",
+        "offer": "25",
+        "rating": "5",
+        "avaliable": true,
+        "summary": "This fitness tracker supports 24/7 automatic heart rate monitoring. #This fitness activity tracker has 10 sports modes and features weather information, music & camera control, alarm clock, stopwatch, sedentary reminder, find phone, and brightness adjustment which makes this sports watch activity tracker practical and comprehensive. #Alloy CNC process case, electroplated anti-fingerprint, reinforced mineral glass mirror",
+        "includes": "LIGE LG0160 Smart Watch",
+        "features": "Alloy,Bluetooth,IP68,1.3 inch,black",
+        "category": "watch",
+        "id": 4
+      },
+      {
+        "name": "LIGE BW0330 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9TaWx2ZXJfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9TaWx2ZXJfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "6999",
+        "offer": "22",
+        "rating": "3.8",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "LIGE BW0330 Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 5
+      },
+      {
+        "name": "LOKMAT TIME 2 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9HcmF5X25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9HcmF5X25fMl8zLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "price": "6999",
+        "offer": "30",
+        "rating": "5",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "LOKMAT TIME 2 Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 6
+      },
+      {
+        "name": "KOSPET Tank M1 Pro Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbHVlX25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbHVlX25fM180LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "price": "8499",
+        "offer": "30",
+        "rating": "4.5",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank M1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 7
+      },
+      {
+        "name": "Zeblaze Meteor Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9CbHVlX25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9XaGl0ZV9uXzJfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "7499",
+        "offer": "30",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank M1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 8
+      },
+      {
+        "name": "F60 Healthcare Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "5999",
+        "offer": "35",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank F60 Healthcare Smart WatchM1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 9
+      },
+      {
+        "name": "Full Touch Screen Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzFfMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzNfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzZfNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "5999",
+        "offer": "35",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "Full Touch Screen Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 10
+      }];
+
+      localStorage.setItem("watch",JSON.stringify(products));
+
+      
+      
+    //   search function start here.......
+
+    let append = (data)=>{
+        let conatiner = document.getElementById("container");
+        
+
+        data.forEach((el)=>{
+            
+            let div2 = document.createElement("div");
+        div2.id="result_box";
+        let img = document.createElement("img");
+        img.id="poster";
+        img.src=el.image1;
+
+        let name = document.createElement("p");
+         name.id="name"
+         name.innerText=el.name;
+        let rating = document.createElement("p");
+        rating.id="rating"
+        rating.innerText=el.rating
+        let price  = document.createElement("p");
+        price.id="price"
+        price.innerText=el.price;
+        let offer  = document.createElement("p");
+        offer.id="offer"
+        offer.innerText=el.offer;
+
+        conatiner.append(div2);
+        div2.append(img,name,rating,price,offer);
+        })
+        
+    }
+
+
+
+
+    let myClick = ()=>{
+       let query =  document.getElementById("query").value;
+       let watch = JSON.parse(localStorage.getItem("watch"));
+       document.getElementById("result_text").innerText="Search result for";
+       document.getElementById("search_text").innerText=`"${query}"`;
+       append(watch);
+    }
+
+   let keySearch = (e)=>{
+       if(e.key==="Enter"){
+          myClick();
+       }
+   }
+
+    document.getElementById("search_button").addEventListener("click", myClick);
+    document.getElementById("query").addEventListener("keydown", keySearch);
+
+</script>
