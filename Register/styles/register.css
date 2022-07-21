@@ -26,6 +26,7 @@
     gap: 10px;
     
     padding-bottom: 30px;
+    
 }
 
 
@@ -35,6 +36,7 @@
     background-color:#4966b6 ;
     width: 20%;
     border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
 }
 #fb>p{
@@ -57,6 +59,7 @@
     background-color:#4285f4 ;
     width: 20%;
     border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     
 }
 #g>p{
