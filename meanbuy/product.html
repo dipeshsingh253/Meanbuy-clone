@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./style/nav.css">
+    <style>
+          
+#container {
+    width: 95%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    border: 2px solid red;
+}
+
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid greenyellow;
+}
+
+#card {
+    height: 500px;
+    border: 1px solid #ebebeb;
+    padding: 0px 15px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+#card>img {
+    width: 100%;
+    height: 65%;
+    max-height: 300px;
+    text-align: center;
+}
+
+
+#product-div {
+    border: 2px solid black;
+    width: 80%;
+    /* margin-left: 5px; */
+}
+
+#price-div {
+    /* width: 58%; */
+    height: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    font-size: 15px;
+}
+
+#free{
+    /* color: green; */
+    font-size: 19px;
+    display: inline-block;
+    /* width: 100%; */
+    color: #008a00;
+}
+
+
+#pr{
+     font-size: 19px;
+     /* line-height: 14px; */
+    /* width: 100%; */
+    color: #f98d29;
+}
+
+#info{
+     border: 1px solid red;
+     display: flex;
+     justify-content: space-between;
+     /* height: 45px;
+      */
+}
+#nam{
+    color: #455a64;
+    font-size: 16px;
+    font-family: sans-serif;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#sav{
+    z-index: 1;
+    background: #3cc101;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 300;
+    padding: 1px 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+/* 
+#sort-div {
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+    </div>
+    <!-- navbar end  -->
+
+<!-- ---------------------ashutosh------------>
+    <!-- results div start here........ -->
+    <div id="container">
+
+      <!-- sidebar -->
+        <div id="sidebar">
+             <div id="filt" >
+            <p>FILTER</p>
+             </div>
+             <div id="brands">
+                <p>BRANDS</p>
+             </div>
+             <div>
+                <p>COLOUR</p>
+             </div>
+        </div>
+
+
+
+        <!-- product sec -->
+        <div id="product-div">
+            <h2></h2>
+         
+            <!-- sort  -->
+            <div id="sort-div"></div>
+
+            <div id="product-list">
+
+            </div>
+
+        </div>
+           
+
+    </div>
+<!-- 
+    <div id="result">
+       <div id="left_box"></div>
+       <div id="container"></div>
+    </div> -->
+
+<!-- ---------------------ashutosh end ------------ -->
+</body>
+</html>
+<script  src="index.js" type="module">
+
+    
+
+
+</script>
