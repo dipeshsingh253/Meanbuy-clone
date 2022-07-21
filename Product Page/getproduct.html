@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Product Name</title>
+    <style>
+      /* navmenu styling starts here */
+      #nav_menu {
+        border: 1px solid black;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      #nav_menu a {
+        text-decoration: none;
+        color: black;
+      }
+      /* navmenu styling ends here */
+      /* main styling starts here */
+
+      #main_content {
+        display: flex;
+
+        border: 1px solid red;
+        width: 85%;
+        margin: auto;
+      }
+
+      /* image slider starts here */
+      #image_slider {
+        width: 50%;
+        height: 650px;
+        /* border: 1px solid green; */
+      }
+      #images {
+        display: flex;
+        justify-content: center;
+      }
+      #images > img {
+        width: 80%;
+      }
+      #btn-slides {
+        display: flex;
+        position: absolute;
+        top: 68vh;
+        left: 28%;
+      }
+      #btn-slides span {
+        height: 15px;
+        width: 15px;
+        border-radius: 75%;
+        border: 1px solid black;
+        margin: 0 3px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .sliders {
+        position: absolute;
+        top: 35vh;
+      }
+      .sliders:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+      #right {
+        top: 35vh;
+        left: 48%;
+      }
+      /* image slider ends here */
+      /* product info ends here */
+      #product_info {
+        border: 1px solid green;
+        width: 50%;
+        overflow: scroll;
+        height: 85vh;
+      }
+      .info_div1 {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        color: orange;
+        gap: 5px;
+        /* text-decoration: underline; */
+      }
+      .info_div1 .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 20px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid green;
+        background-color: green;
+        border-radius: 5px;
+      }
+      .social > a {
+        text-decoration: none;
+      }
+      .fa {
+        font-size: 15px;
+        text-decoration: none;
+        margin: 5px;
+      }
+      .fa-star 
+      {
+        font-size: 12px;
+        color: white;
+      }
+      .fa-facebook
+      {
+        color: #3B5998;
+      }
+      .fa-twitter
+      {
+        color: #1DA1F2;
+      }
+      .fa-pinterest
+      {
+        color: #E60438;
+      }
+      .fa-linkedin
+      {
+        color: #0E76A8;
+      }
+      .fa-whatsapp
+      {
+        color: #8EE07F;
+      }
+      .fa-at
+      {
+        color: #F4A076;
+      }
+
+      .info_div2 {
+        display: flex;
+        flex-direction: column;
+      }
+      .info_div2 .price {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: baseline;
+        
+      }
+      .info_div2 .price p:nth-child(2)
+      {
+        color: grey;
+        text-decoration: line-through;
+      }
+      .info_div2 .price p:nth-child(3)
+      {
+        color: green;
+        font-size: 12px;
+      }
+      .info_div2 .price p:nth-child(4)
+      {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 13px;
+        color: grey;
+      }
+      .info_div2 .delivery {
+        display: flex;
+        flex-direction: column;
+      }
+      .info_div2 .delivery > p{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+      }
+      .info_div2 .delivery > p > span {
+        text-decoration: underline;
+      }
+      .info_div2 .delivery > p:nth-child(4) > span {
+        color: green;
+        font-size: 15px;
+        text-decoration: none;
+      }
+      .fa-check {
+        color: #04CA30;
+      }
+      .info_div2 .delivery > p:nth-child(4) {
+        border-bottom: 3px solid orange;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      .delivery_image {
+        width: 70%;
+        height: 80px;
+        /* border: 1px solid green; */
+      }
+      .bulk {
+        border-bottom: 3px solid orange;
+        /* border-top: 3px solid orange; */
+        font-size: 12px;
+      }
+      .payment
+      {
+        border-bottom: 3px solid orange;
+      }
+      .payment div:nth-child(2)
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .payment div:nth-child(2) > span {
+        border: 1px solid grey;
+        background-color: grey;
+        border-radius: 10px;
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .fa-plus, .fa-minus {
+        color: darkorange;
+        border-radius: 50%;
+        border: transparent;
+      }
+      #addtoCart {
+        margin: 25px 0;
+        background-color: white;
+        border: transparent;
+        width: 25%;
+        height: 30px;
+      }
+      #buyNow {
+        margin: 25px 0;
+        background-color: orange;
+        border: transparent;
+        width: 25%;
+        height: 30px;
+      }
+      /* product info ends here */
+
+      /* main styling starts here */
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- append navbar here -->
+    </div>
+
+    <div id="main">
+      <div id="nav_menu">
+        <a href="#">Home</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Accesories</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Mens</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Watch</a>
+    
+      </div>
+      <div id="main_content">
+        <!-- image slider starts here  -->
+
+        <div id="image_slider">
+          <div id="images"></div>
+          <div id="btn-slides">
+            <span onclick="btn_slider(1)"></span>
+            <span onclick="btn_slider(2)"></span>
+            <span onclick="btn_slider(3)"></span>
+          </div>
+          <div class="sliders" id="left">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA9ElEQVRIie3WMUpDQRAG4A9BrOwEwcrCA9hYWqVKq43ewXgJ4yGs9Ao5gJJGUPEMgoFUYieCKHkWz8DbJaCoO49Afth2P2bZnR0WmZOs4hbV17qKQJcwaKAV7iPg0wx9xlZpdB+TBvqOTml0Gy/Sao9Ko+sYZeh5aXQZwwy9xkpp+CxDH9UnUDTHGfqKndJoR31rp+gEB6XRTTxJqz0pjcJdhg7UHevP+W6T6j+Q32TWUfej8F28SS/XYRTe08JzmiZvIGNsRMCttUxYw0OGX0TAzP4We1H4nnQQ+EA3Cu9Lqw4ZfWhx2KMeb28a8GUUvMiP8wl+P2e4Vi0+4AAAAABJRU5ErkJggg=="
+            />
+          </div>
+          <div class="sliders" id="right">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAA7klEQVRIie3WMUpDQRAG4I+AWNkJgpWFB7DQ0iqVrTZ6B5NLGA9hpVfIARJsAgl4BkHBSuwkIBFj8RT2LSkE2XkJ5Ictl49dZmeHdZYsQ8x/1gRbUfBDAs/RRysC3sNrhvciYDjGRwJ/4SIK76ifeoqjKPwmw1+wGwFv4D7DR9iMwLfxmOF3ETAc4D3DO1H4qaq6f+FPnEThPfVTv2E/Am6pOlmKT/6yaWVzrYGrPlMvrhnapdFFz+myNLqD5wy9LY021jLzT+JJdQNF083QKQ5Lo21V1aaDwHlpdNHoc1UapcFhb5CgY4Hj7Tr/zjfcW2a3eoiKgwAAAABJRU5ErkJggg=="
+            />
+          </div>
+        </div>
+        <!-- image slider ends here  -->
+        <!-- product info starts here  -->
+        <div id="product_info">
+        </div>
+
+        <!-- product info ends here  -->
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const images = document.querySelector("#images"); // append image here
+  const slideLeft = document.querySelector("#left"); // left slide
+  const slideRight = document.querySelector("#right"); // right slide
+  const product_info = document.querySelector("#product_info"); // append product info here
+  var imageArray = [
+    "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8zXzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+    "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+    "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8yXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+  ];
+  function nextImage() {}
+  function showImage(url) {
+    let img = document.createElement("img");
+    img.src = url;
+    images.append(img);
+  }
+  console.log(imageArray[0]);
+  showImage(imageArray[0]);
+  console.log(obj);
+
+  var obj = {
+    name: "3D BENZ AMG WHEEL WATCH",
+    image1:
+      "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8zXzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+    image2:
+      "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+    image3:
+      "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8yXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+    price: "8999",
+    offer: "21",
+    rating: "1.8",
+    avaliable: true,
+    summary:
+      "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+    includes: "1 x 3D Mercedes AMG Wheel watch in the high-quality package.",
+    features:
+      "3D BENZ AMG WHEEL WATCH, Stainless steel case , Sapphire glass , Stainless steel band",
+    category: "watch",
+    id: 1,
+  };
+  showProductInfo(obj);
+  function showProductInfo(product)
+  {
+    let product_title = document.createElement("h1");
+    product_title.innerText = product.name;
+
+    let info_div1 = document.createElement("div");
+    info_div1.classList.add("info_div1");
+    let rating = document.createElement("span");
+    rating.classList.add("rating");
+    rating.innerHTML = `<p>${product.rating}</p><a href="#" class="fa fa-star"></a>`;
+    let write_review = document.createElement("p");
+    write_review.innerText = "WRITE A REVIEW";
+    let socials = document.createElement("div");
+    socials.classList.add("socials");
+    socials.innerHTML = `
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-pinterest"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-whatsapp"></a>
+        <a href="#" class="fa fa-at"></a>
+    `
+    info_div1.append(rating, write_review, socials);
+
+    let info_div2 = document.createElement("div");
+    info_div2.classList.add("info_div2");
+    let price = document.createElement("div");
+    price.classList.add("price");
+    price.innerHTML = `<h1>₹${product.price}</h1> <p>₹${+product.price + Math.floor(product.price* product.offer / 100)}</p> <p>UP TO ${product.offer}% OFF </p>
+    <p>(Save up to <span style="color:orange;">₹${Math.floor(product.price*product.offer/100)})</span></p>`;
+
+    let delivery = document.createElement('div');
+    delivery.classList.add("delivery");
+    delivery.innerHTML = `
+         <p> <a href="#" class="fa fa-check">CASH ON DELIVERY availible on orders between ₹999</a></p>
+         <p> <a href="#" class="fa fa-check"></a>Get up to ₹500 OFF with coupon code <span>PREAPAID</span></p>
+          <p><a href="#" class="fa fa-check"></a>3 interest free payments</p>
+          <p>Availability :<span>In Stock</span></p>
+    `
+    let deliveryImage = document.createElement("img");
+    deliveryImage.classList.add("delivery_image");
+    deliveryImage.src = "del.png";
+
+    let bulk = document.createElement("div");
+    bulk.classList.add("bulk");
+    bulk.innerHTML = `<p>For B2B/ Bulk pricing,<a href="#">click here</a></p>`
+
+    delivery.append(deliveryImage,bulk);
+
+    let payment = document.createElement('div');
+    payment.classList.add('payment');
+    payment.innerHTML = `
+        <h4>Please choose your preference</h4>
+        <div>
+        <p>Select Quantity:</p> <span> <button class="fa fa-minus"></button>1<button class="fa fa-plus"></button>
+</span>
+        </div>
+        <button id="addtoCart">Add to Cart</button>
+        <button id="buyNow">Buy Now</button>
+    `
+    info_div2.append(price,delivery,payment);
+    product_info.append(product_title, info_div1, info_div2);
+  }
+</script>
