@@ -1,8 +1,9 @@
 
 
 let dataArr=JSON.parse(localStorage.getItem("userData")) || [];
+document.getElementById('sign').addEventListener('click',register);
 function register(){
-  event.preventDefault();
+ 
 
   let dataObj = {
                  email:document.querySelector("#email").value,

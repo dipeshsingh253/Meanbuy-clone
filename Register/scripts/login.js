@@ -1,7 +1,7 @@
 let dataArrLS = JSON.parse(localStorage.getItem("userData")) || [];
 
 
-
+document.getElementById('log').addEventListener('click',login);
 function login(){
    
 
