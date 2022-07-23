@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Badal Created Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <style>
+             *{
+                margin: 0px;
+                padding:0px;
+            }
+            
+           #navbar{
+               height: 110px;
+               width: 100%;
+               /* border: 1px solid red; */
+               box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+           } 
+          #nav_box1{
+              display: flex;
+              gap: 20px;
+              /* border: 1px solid green; */
+              height: 70px;
+          }
+          #main_logo{
+              height: 58px;
+              width: 185px;
+              margin-top: 10px;
+              margin-left: 16px;
+          }
+          #search_box{
+              height: 25px;
+              width: 290px;
+              margin-top: 30px;
+              border: 1px solid rgb(218, 218, 218);
+              margin-left: 20px;
+              padding-left: 10px;
+              display: flex;
+          }
+          #search_box>input{
+              height: 100%;
+              width: 100% ;
+              border: none;
+              outline: inherit;
+          }
+          #search_box>img{
+              height: 28px;
+              width: 27px;
+              /* margin-left: 5px; */
+              /* margin-top: 1px; */
+              margin-right: 3px;
+              cursor: pointer;
+              margin-bottom: 2px;
+          }
+          #small_text{
+              display: flex;
+              margin-left: 340px;
+              margin-top: 20px;
+          }
+          .s_text{
+            height: 10px;
+            border-right: 1px solid black;
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 4px;
+            cursor: pointer;
+          }
+          .s_text:hover{
+              text-decoration-line: underline;
+          }
+          #s_text2{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+          }
+          #s_text2:hover{
+              text-decoration-line: underline;
+          }
+          #cart_logo{
+              height: 20px;
+              width: 20px;
+              margin-top: 25px;
+              margin-left: 10px;
+          }
+          #cart_count{
+              margin-top: 20px;
+              margin-left: -19px;
+              font-size: 10px;
+          }
+          #cart_logo2{
+              height: 20px;
+              width: 20px;
+              margin-top: 25px;
+              margin-left: 10px;
+          }
+          #nav_box2{
+              display: flex;
+              gap: 30px;
+          }
+          #nav2_text1{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            margin-left: 80px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          #nav2_text2{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 80px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          .nav2_text{
+            height: 10px;
+            /* border-right: 1px solid black; */
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 3px;
+            padding-right: 3px;
+            padding-bottom: 3px;
+            cursor: pointer;
+            margin-top: 14px;
+          }
+          #result{
+              height: 950px;
+              width: 100%;
+              /* border: 1px solid red; */
+              overflow: scroll;
+              display: flex;
+          }
+          #result_box{
+              height: 400px;
+              width: 300px;
+              /* border: 1px solid green; */
+              margin: auto;
+              margin-top: 30px;
+
+          }
+          #poster{
+              height: 70%;
+              width: 100%;
+          }
+          #left_box{
+              margin-top: 30px;
+              height: 1700px;
+              width: 15%;
+              border-right: 1px solid rgb(218, 218, 218);
+          }
+          
+          #searchresult_container{
+              /* width: 80%; */
+              /* height: auto; */
+              /* border: 1px solid green; */
+              margin-top: 30px;
+              display: grid;
+              grid-template-columns: repeat(3,1fr);
+              grid-template-rows: auto;
+              /* gap: 20px; */
+              margin-left: 30px;
+          }
+          #right_box{
+              margin-top: 30px;
+          }
+          #filter_container{
+              height: 30px;
+              width: 1050px;
+              display: flex;
+              margin-left: 20px;
+              
+          }
+          #filter_container>p{
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            text-align: center;
+            color: rgb(51, 51, 51);
+            margin-top: 7px;
+          }
+          #filter_container>h3{
+              color: rgb(250, 128, 114);
+              font-family: 'Roboto', sans-serif;
+              /* margin-left: -675px; */
+              margin-top: 6px;
+          }
+
+       #sub_menu{
+           width: 260px;
+           height: 190px;
+           border: 1px solid rgb(247, 148, 29);
+           margin-top: 10px;
+           background-color: white;
+           /* margin-right: 70px; */
+           position: absolute;
+           margin-left: -220px;
+           margin-top: 10px;
+       }
+       #sub_menu{
+           display: none;
+       }
+       #order_text{
+        border: none;
+           height: 40px;
+           width: 220px;
+           background-color: rgb(247, 148, 29);
+           color: white;
+           cursor: pointer;
+           font-size: 20px;
+           margin-top: -10px;
+           margin-left: 20px;
+       }
+       #signout_text{
+        border: none;
+           height: 40px;
+           width: 220px;
+           background-color: rgb(247, 148, 29);
+           color: white;
+           cursor: pointer;
+           font-size: 20px;
+           margin-top: 10px;
+           margin-left: 20px;
+       }
+       #menu:hover #sub_menu{
+           display: block;
+           /* position: absolute; */
+       }
+
+       #Sign_text{
+           text-align: center;
+           /* margin-left: 18px; */
+        font-family: 'Poppins', sans-serif;
+        font-size: 9px;
+        color: rgb(247, 148, 29);
+        margin-top: 30px;
+       }
+       #categories_box{
+            height: 345px;
+            width: 1200px;
+            border-bottom: 1px solid;
+            display: flex;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          position: relative;
+           background-color: white;
+           margin-top: 15px;
+        }
+        
+        .small_box{
+          height: 100%;
+          width: 12.2%;
+          
+        }
+        .big_text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            text-decoration: underline;
+            font-weight: 200;
+            margin-left: 20px;
+            margin-top: 25px;
+            color: black;
+        }
+        .small_text{
+            font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: 400;
+            cursor: pointer;
+           
+        }
+        .small_text:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        #categories_box{
+            display: none;
+        }
+        #main:hover #categories_box{
+            display: flex;
+            
+        }
+        #filter_div{
+            height: 25px;
+            width: 190px;
+            border: 1px solid rgb(218, 218, 218);
+            display: flex;
+            margin-left: 640px;
+            cursor: pointer;
+        }
+        #filter_para{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+          color:rgb(83, 102, 112) ;
+          margin-top: 3px;  
+          margin-left: 20px;
+        }
+        #filter_img{
+            height: 20px;
+            width: 20px;
+            margin-top: 3px;
+            margin-left: 50px;
+            border-left:1px solid ;
+            padding-left: 5px;
+        }
+        #product_name{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color:rgb(72, 93, 102) ;
+            margin-left: 15px;
+        }
+        #product_rating{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            border: 1px solid rgb(60, 193, 0);
+            background-color: rgb(60, 193, 0);
+            padding-bottom: 2px;
+            color: rgb(255, 255, 255);
+            height: 15px;
+            width: 54px;
+            border-radius: 5px;
+            margin-left: 230px;
+            padding-left: 9px;
+        }
+        #price_logo{
+            font-size: 16spx;
+            color: rgb(249, 141, 41);
+            margin-left: 15px;
+            border-top:1px solid #D3D8DA ;
+            margin-top: 4px;
+            padding-top:4px ;
+        }
+        #product_price{
+            /* font-family: 'Poppins', sans-serif; */
+            font-size: 20px;
+            color: rgb(249, 141, 41);
+            margin-top: -23px;
+            margin-left: 25px;
+            
+        }
+        #product_offer{
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: rgb(60, 193, 0);
+            margin-left: 187px;
+            margin-top: -18px;
+            font-weight: bold;
+        }
+        #filter_function{
+          height: 200px;
+          width: 200px;
+          border: 1px solid rgb(218, 218, 218);
+          position: absolute;
+          margin-top: 24px;
+          margin-right: 100px;
+          background: white;
+          margin-left: 0px;
+          
+        }
+        .hover_para{
+          font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+          color:rgb(83, 102, 112) ;
+          margin-left: 10px;
+          margin-top: 10px;
+          cursor: pointer;
+          
+        }
+        .hover_para:hover{
+          text-decoration: underline;
+        }
+        
+        .common_para{
+          font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+          color:rgb(83, 102, 112) ;
+          margin-left: 20px;
+          cursor: pointer;
+        }
+        .common_para:hover{
+          text-decoration: underline;
+        }
+        
+         #filter_function{
+          display: none;
+        }  
+         #filter_div:hover  #filter_function{
+          display: block;
+          
+        } 
+        #footer_container{
+          margin-top: 0px;
+          /* margin-left: 00px; */
+          height: 320px;
+          width: 100%;
+          /* border: 1px solid blue; */
+          position: absolute;
+          display: flex;
+          background: rgb(242, 242, 242);
+        }
+        .footer_box{
+          height: 100%;
+          width: 15%;
+          /* border: 1px solid green; */
+        }
+        #footer_box2{
+          height: 100%;
+          width: 30%;
+        }
+        #big_p{
+          font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+          color:rgb(83, 102, 112) ;
+          margin-top: 15px;
+          margin-left: 30px;
+          padding-bottom: 10px;
+          color: rgb(243, 146, 30);
+        }
+        .small_p{
+          font-family: 'Poppins', sans-serif;
+            font-size: 11px;
+          color:rgb(83, 102, 112) ;
+          margin-top: 5px;
+          margin-left: 30px;
+          cursor: pointer;
+        }
+        #payment_logo{
+          width: 300px;
+          height: 35px;
+          margin-left: 60px;
+          margin-top: 40px;
+        }
+        #safety_logo{
+          width: 160px;
+          margin-left: 70px;
+        }
+        #Email_box{
+          height: 29px;
+          width: 130px;
+         margin-left: 60px;
+         border: none;
+         outline: inherit;
+         margin-top: 20px;
+         font-size: 11px;
+         padding-left: 10px;
+        }
+        #subscribe{
+          border: none;
+          outline: inherit;
+          background-color: orange;
+          width: 120px;
+          height: 29px;
+          color: white;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+      
+    </div>
+
+
+    <!-- results div start here........ -->
+
+    <div id="result">
+       <!-- <div id="left_box"></div>
+
+       <div id="right_box">
+
+           <div id="test">
+               <p id="result_text"></p>
+               <h3 id="search_text"></h3>
+               <div id="filter_div">
+                
+                   <p id="filter_para">WHAT'S NEW</p>
+                   <img id="filter_img" src="Picsart_22-07-22_22-38-55-659.png">
+                   
+                   
+               </div>
+           </div>
+           <div id="searchresult_container">
+           
+           </div>
+
+       </div> -->
+      <!-- <div id="footer_container">
+          
+    </div> -->
+    </div>
+    <div id="footer_container">
+          <div class="footer_box">
+            <p id="big_p">OUR POLICIES</p>
+            <p class="small_p">Covid-19 Precuation</p>
+            <p class="small_p">Our promise</p>
+            <p class="small_p">Terms & Conditions</p>
+            <p class="small_p">Custom Tariffs and Fees</p>
+            <p class="small_p">Privacy Policy</p>
+          </div>
+          <div class="footer_box">
+            <p id="big_p">CRPORATE</p>
+            <p class="small_p">Sell With Us</p>
+            <p class="small_p">Career Opportunites</p>
+            <p class="small_p">Our Blog</p>
+            <p class="small_p">Site Map</p>
+          </div>
+          <div class="footer_box">
+            <p id="big_p">HELP</p>
+            <p class="small_p">How MeanBuy Works</p>
+            <p class="small_p">My Orders</p>
+            <p class="small_p">Exchanges, returns and Refunds</p>
+            <p class="small_p">Contact Us</p>
+            <p class="small_p">FAQ</p>
+          </div>
+          <div class="footer_box">
+            <p id="big_p">STATE COVERED</p>
+            <p class="small_p">Tamilnadu</p>
+            <p class="small_p">Karnataka</p>
+            <p class="small_p">Maharastar</p>
+            <p class="small_p">Kerala</p>
+            <p class="small_p">West bengal</p>
+            <p class="small_p">Telangana</p>
+            <p class="small_p">Andhra Pradhesh</p>
+          </div>
+          <div class="footer_box">
+            <p id="big_p">SELL WITH US</p>
+            <p class="small_p">General Information</p>
+            <p class="small_p">Signup</p>
+          </div>
+          <div id="footer_box2">
+            <input id="Email_box" placeholder="Your Email Address" type="text"><input id="subscribe" placeholder="Subscribe" type="submit">
+            <img id="payment_logo" src="https://d64lkarmo2mrq.cloudfront.net/icons/paymethods0622.png">
+            <img id="safety_logo" src="Picsart_22-07-23_18-14-49-233.png" >
+          </div>
+    </div>
+
+</body>
+</html>
+<script type="module">
+ 
+ import {navbar} from "./navbar.js";
+ document.getElementById("navbar").innerHTML=navbar();
+
+  let  products = [
+      {
+        "name": "3D BENZ AMG WHEEL WATCH",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzMyXC9Hb2xkX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8xXzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMjI1XC9SZWRfbl8yXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "8999",
+        "offer": "21",
+        "rating": "1.8",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "1 x 3D Mercedes AMG Wheel watch in the high-quality package.",
+        "features": "3D BENZ AMG WHEEL WATCH, Stainless steel case , Sapphire glass , Stainless steel band",
+        "category": "watch",
+        "id": 1
+      },
+      {
+        "name": "KOSPET Optimus 2 Smartwatch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzJfMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzcwXC9CbGFja19uXzRfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "21999",
+        "offer": "37",
+        "rating": "4.3",
+        "avaliable": true,
+        "summary": "Dual chip, Helio P22+PAR2822: Thanks to this dual-chip design mode, the computing efficiency of the watch is greatly improved, the movement data collection is more accurate, and the power consumption of the Bluetooth connection between the watch and the mobile phone is greatly reduced, and the stability of the Bluetooth connection is greatly improved. # Two 4G standby modes, Android mode+ Lite Mode: Android Mode: A high-performance version of the Android watch, which can turn on all functions such as video, games, camera, music, social, and calling # Lite Mode: Lite version of the call watch: only supports localized applications such as calls, text messages, sports and fitness",
+        "includes": "KOSPET Optimus 2 Smartwatch (4GB RAM + 64GB ROM)",
+        "features": "Kospet , Kospet Optimus 2, Material Silicon, 1.6 inch",
+        "category": "watch",
+        "id": 2
+      },
+      {
+        "name": "LOKMAT APPLLP 6 Smart Watch 2+16GB",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9HcmVlbl9uXzJfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODI0XC9HcmVlbl9uXzNfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "26999",
+        "offer": "21",
+        "rating": "4.8",
+        "avaliable": true,
+        "summary": "LOKMAT- APPLLP 6 Android Smartwatch supports 4G/WIFI network connections.  #  After inserting the SIM card (not included), you can make and receive calls, send text messages, or surf the internet any time and anywhere. # video entertainment, photo taking, step counting, heart rate monitoring, social entertainment, blood oxygen detection",
+        "includes": "LOKMAT APPLLP 6 Smart Watch 2+16GB",
+        "features": "LOKMAT , TPU+Microfiber Leather, 830mAh",
+        "category": "watch",
+        "id": 3
+      },
+      {
+        "name": "LIGE LG0160 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9TaWx2ZXJfbl8yXzMuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk3XC9TaWx2ZXJfbl8zXzQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "5999",
+        "offer": "25",
+        "rating": "5",
+        "avaliable": true,
+        "summary": "This fitness tracker supports 24/7 automatic heart rate monitoring. #This fitness activity tracker has 10 sports modes and features weather information, music & camera control, alarm clock, stopwatch, sedentary reminder, find phone, and brightness adjustment which makes this sports watch activity tracker practical and comprehensive. #Alloy CNC process case, electroplated anti-fingerprint, reinforced mineral glass mirror",
+        "includes": "LIGE LG0160 Smart Watch",
+        "features": "Alloy,Bluetooth,IP68,1.3 inch,black",
+        "category": "watch",
+        "id": 4
+      },
+      {
+        "name": "LIGE BW0330 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9TaWx2ZXJfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNzk4XC9TaWx2ZXJfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "6999",
+        "offer": "22",
+        "rating": "3.8",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "LIGE BW0330 Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 5
+      },
+      {
+        "name": "LOKMAT TIME 2 Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9HcmF5X25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAxXC9HcmF5X25fMl8zLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "price": "6999",
+        "offer": "30",
+        "rating": "5",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "LOKMAT TIME 2 Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 6
+      },
+      {
+        "name": "KOSPET Tank M1 Pro Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbHVlX25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNjcyXC9CbHVlX25fM180LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "price": "8499",
+        "offer": "30",
+        "rating": "4.5",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank M1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 7
+      },
+      {
+        "name": "Zeblaze Meteor Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9CbHVlX25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzNTQ1XC9XaGl0ZV9uXzJfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "7499",
+        "offer": "30",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank M1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 8
+      },
+      {
+        "name": "Mickey M99 Smart Watch",
+        "image1": "	https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzODAwXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "6999",
+        "offer": "30",
+        "rating": "3.5",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank F60 Healthcare Smart WatchM1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 9
+      },
+      {
+        "name": "F60 Healthcare Smart Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "5999",
+        "offer": "35",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank F60 Healthcare Smart WatchM1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 10
+      },
+      {
+        "name": "Women ZL13 Square Smartwatch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMzYxXC9CbHVlX25fMV8xLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MzIwLCJoZWlnaHQiOjMyMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTk5XC9SZWRfbl81XzYuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+        "price": "7299",
+        "offer": "27",
+        "rating": "4.9",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "KOSPET Tank F60 Healthcare Smart WatchM1 Pro Smart Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 11
+      },
+      {
+        "name": "Full Touch Screen Watch",
+        "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzFfMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzNfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMzMTQ1XC9CZWlnZV9uXzZfNy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+        "price": "5999",
+        "offer": "35",
+        "rating": "4.7",
+        "avaliable": true,
+        "summary": "Lose yourself in the world of luxury with the Turbo Rim watch face. This eye-catching accessory is inspired by a remarkable and timeless rim and is hand-made to precision from robust 3D stainless steel. The luxurious dial is finished with a scratch-resistant finish to give you this elite watch that is created to last. With its sleek design and striking looks, the Turbo Rim watch face is perfect for anyone who loves driving fast and looking good doing it. Order your watch today and experience true luxury!",
+        "includes": "Full Touch Screen Watch",
+        "features": "Stainless Steel,Water Resistant,1.28 inch,Fitness Tracker",
+        "category": "watch",
+        "id": 12
+      }];
+
+      localStorage.setItem("watch",JSON.stringify(products));
+
+      let  products2 = [
+      {
+      "name": "Pisen X-Pods T2 Earphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQzXC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQzXC9CbGFja19uXzVfNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "4299",
+      "offer": "35",
+      "rating": "4.7",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Pisen X-Pods T2 Earphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 11
+    },
+    {
+      "name": "Disney Mickey Minnie In-ear Earphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQ0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQ0XC9XaGl0ZV9uXzFfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNTQ0XC9XaGl0ZV9uXzNfNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "6999",
+      "offer": "40",
+      "rating": "4.7",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Disney Mickey Minnie In-ear Earphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 12
+    },
+    {
+      "name": "SYLLABLE S101 TWS Earphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDc0XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDc0XC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDc0XC9CbGFja19uXzVfNS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "6999",
+      "offer": "40",
+      "rating": "3.6",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "SYLLABLE S101 TWS Earphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 13
+    },
+    {
+      "name": "TWS Noise Cancelling Earphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzUxXC9CZWlnZV9uXzFfMS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzUxXC9OYXZ5K0JsdWVfbl8yXzMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzUxXC9OYXZ5K0JsdWVfbl8xXzIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "price": "24999",
+      "offer": "30",
+      "rating": "3.6",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "TWS Noise Cancelling Earphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 14
+    },
+    {
+      "name": "PISEN Bluetooth Earphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3MjQ3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3MjQ3XC9CbGFja19uXzJfMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjI3MjQ3XC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "3999",
+      "offer": "30",
+      "rating": "3.6",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "PISEN Bluetooth Earphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 15
+    },
+    {
+      "name": "Wireless Hush Hybrid Headphone",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNTY3XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNTY3XC9CbHVlX25fMV8yLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNTY3XC9HcmF5X25fMV8zLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwMCwiaGVpZ2h0IjoxMDAwLCJmaXQiOiJjb250YWluIiwiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19fX0=",
+      "price": "12999",
+      "offer": "35",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Wireless Hush Hybrid Headphone\t",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 16
+    },
+    {
+      "name": "Bluetooth Noise Cancelling Headphone",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ2XC9TaWx2ZXJfbl8xXzEucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ2XC9TaWx2ZXJfbl8yXzIucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ2XC9TaWx2ZXJfbl8zXzMucG5nIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "price": "33999",
+      "offer": "35",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Bluetooth Noise Cancelling Headphone",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 17
+    },
+    {
+      "name": "Iron Man Gaming Earbuds",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNjEzXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNjEzXC9SZWRfbl8xXzIuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyNjEzXC9SZWRfbl8zXzQuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjEwMDAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "price": "4999",
+      "offer": "35",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Iron Man Gaming Earbuds",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 18
+    },
+    {
+      "name": "Monster Inspire ANC Headphones",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzRfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "45999",
+      "offer": "35",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Monster Inspire ANC Headphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 19
+    },
+    {
+      "name": "Happy Plugs True Wireless Earbuds",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMyOTU1XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjMyMCwiaGVpZ2h0IjozMjAsImZpdCI6ImNvbnRhaW4iLCJiYWNrZ3JvdW5kIjp7InIiOjI1NSwiZyI6MjU1LCJiIjoyNTUsImFscGhhIjoxfX19fQ==",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzRfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "5999",
+      "offer": "33",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Monster Inspire ANC Headphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 19
+    },
+    {
+      "name": "Edifier Mini Buds",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzNfMy5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxNDUyXC9CbGFja19uXzRfNC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "8999",
+      "offer": "31",
+      "rating": "3.7",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "Monster Inspire ANC Headphones",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 19
+    },
+    {
+      "name": "High-End Audiophile Headphone",
+      "image1": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ4XC9CbGFja19uXzFfMS5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image2": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ4XC9CbGFja19uXzJfMi5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "image3": "https://dbnzj30o7hucx.cloudfront.net/eyJidWNrZXQiOiJtZWFuYnV5LWltYWdlcyIsImtleSI6IjMxMzQ4XC9CbGFja19uXzNfMy5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMDAsImhlaWdodCI6MTAwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MjU1LCJnIjoyNTUsImIiOjI1NSwiYWxwaGEiOjF9fX19",
+      "price": "129999",
+      "offer": "28",
+      "rating": "4.1",
+      "avaliable": true,
+      "summary": "Experience bass nirvana with a higher frequency response and 11 mm audio drivers for powerful, thunderous notes that will transform your media. Control your music, handle phone calls, and even summon Google Assistant with three tactile inline buttons and a mic. Say hello to hands-free convenience",
+      "includes": "High-End Audiophile Headphone",
+      "features": "Wireless, Yes, 5.0, 120 Hours",
+      "category": "earphone",
+      "id": 20
+    }
+      ];
+      localStorage.setItem("earphones",JSON.stringify(products2));
+    //   search function start here.......
+
+    let append = (data,query)=>{
+
+        // creating important div start here .........
+         let result = document.getElementById("result");
+         result.innerHTML=null;
+         let left_box = document.createElement("div");
+         left_box.id="left_box"
+
+         let right_box = document.createElement("div");
+         right_box.id="right_box"
+
+        //  let footer_container =  document.createElement("div");
+        //  footer_container.id="footer_container";
+         
+         result.append(left_box,right_box);
+
+         let filter_container = document.createElement("div");
+         filter_container.id="filter_container";
+
+         let searchresult_container = document.createElement("div");
+         searchresult_container.id="searchresult_container";
+
+         right_box.append(filter_container,searchresult_container);
+
+        // creating important div end here .........
+
+         let result_text = document.createElement("p");
+         result_text.id="result_text";
+
+         let search_text = document.createElement("h3");
+         search_text.id="search_text";
+
+         filter_container.append(result_text,search_text);
+         
+         document.getElementById("result_text").innerText="Search result for";
+       document.getElementById("search_text").innerText=`"${query}"`;
+
+
+
+        //    filter text start here....
+        // let filter_container = document.getElementById("filter_container");
+        
+        let  filter_div = document.createElement("div");
+        filter_div.id="filter_div"
+        // filter_div.innerHTML=null;
+        let filter_para = document.createElement("p");
+        filter_para.id="filter_para";
+        filter_para.innerText="WHAT'S NEW";
+        
+        let filter_img = document.createElement("img");
+        filter_img.src="Picsart_22-07-22_22-38-55-659.png"
+        filter_img.id="filter_img"
+
+
+        let filter_function = document.createElement("div");
+        filter_function.id="filter_function";
+        
+       let main_text = document.createElement("p");
+       main_text.id="main_text";
+       main_text.className="hover_para"
+       main_text.innerText="What's New";
+
+        let fet_text = document.createElement("p");
+         fet_text.id="fet_text";
+         fet_text.className="hover_para"
+         fet_text.innerText="Featured Items";
+
+        let trend_text = document.createElement("p");
+         trend_text.id="trend_text";
+         trend_text.className="hover_para"
+         trend_text.innerText="Trending Items"
+
+         let price_text = document.createElement("p");
+         price_text.id="price_text";
+         price_text.className="hover_para"
+         price_text.innerText="Price";
+
+         let htl = document.createElement("p");
+         htl.id="htl";
+         htl.className="common_para"
+         htl.innerText="High To Low";
+
+         let lth = document.createElement("p");
+         lth.id="lth";
+         lth.className="common_para"
+         lth.innerText="Low To High";
+        
+        filter_container.append(filter_div);
+        filter_div.append(filter_para,filter_img,filter_function);
+        filter_function.append(main_text,fet_text,trend_text,price_text,htl,lth);
+
+        let container = document.getElementById("searchresult_container");
+        container.innerHTML=null;
+
+
+        //  filter high to low start here......
+        
+  let hightoLow = ()=>{
+          
+          if(query==="watch" || query==="Watch"){
+              watch.forEach((el)=>{
+        watch.sort(function(a,b){
+          return Number(b.price)-Number(a.price);
+        })
+      })
+
+      append(watch,query);
+  }
+
+  else{
+    earphones.forEach((el)=>{
+       earphones.sort(function(a,b){
+         return Number(b.price)-Number(a.price);
+       })
+     })
+
+     append(earphones,query);
+  }
+       }
+
+
+  document.getElementById("htl").addEventListener("click",hightoLow)
+
+  //  filter high to low end here......
+
+  //  filter low to high start here......
+  let lowtoHigh = ()=>{
+          
+          if(query==="watch" || query==="Watch"){
+              watch.forEach((el)=>{
+        watch.sort(function(a,b){
+          return Number(a.price)-Number(b.price);
+        })
+      })
+
+      append(watch,query);
+  }
+
+  else{
+    earphones.forEach((el)=>{
+       earphones.sort(function(a,b){
+         return Number(a.price)-Number(b.price);
+       })
+     })
+
+     append(earphones,query);
+  }
+       }
+
+
+  document.getElementById("lth").addEventListener("click",lowtoHigh)
+  //  filter low to high end here......
+
+       
+
+        data.forEach((el)=>{
+            
+            let div2 = document.createElement("div");
+        div2.id="result_box";
+        let img = document.createElement("img");
+        img.id="poster";
+        img.src=el.image1;
+
+        let name = document.createElement("p");
+         name.id="product_name"
+         name.innerText=el.name;
+        let rating = document.createElement("p");
+        rating.id="product_rating"
+        rating.innerText=`${el.rating}/5 ★`;
+
+        let price_logo  = document.createElement("p");
+        price_logo.id="price_logo"
+        price_logo.innerText=`₹`;
+
+        let price  = document.createElement("p");
+        price.id="product_price"
+        price.innerText=`${el.price}`;
+        let offer  = document.createElement("p");
+        offer.id="product_offer"
+        offer.innerText=`OFF TO ${el.offer}% OFF`;
+
+        container.append(div2);
+        div2.append(img,name,rating,price_logo,price,offer);
+        })
+        
+    }
+
+    let watch = JSON.parse(localStorage.getItem("watch"));
+       let earphones = JSON.parse(localStorage.getItem("earphones"));
+    
+
+    let myClick = (watch,earphones)=>{
+        
+       let query =  document.getElementById("query").value;
+       
+       
+       if(query==="watch" || query==="Watch"){
+        append(watch,query);
+       }
+       else if(query==="earphones" || query==="Earphone" || query==="earphone" || query==="headphone" || query==="headphones" || query==="earbuds" || query==="buds"){
+           append(earphones,query);
+       }
+       else{
+           alert("Product not available")
+           return
+       }
+
+
+   
+    }
+
+    
+  
+
+
+   let keySearch = (e)=>{
+       if(e.key==="Enter"){
+          myClick(watch,earphones);
+       }
+   }
+
+    document.getElementById("search_button").addEventListener("click", myClick);
+    document.getElementById("query").addEventListener("keydown", keySearch);
+
+
+
+    // filter function start here.....
+
+   
+
+</script>
