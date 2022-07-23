@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Make Payment</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="payment_form">
+
+            <div id="contact">
+                <p><b>Your Email &amp; Phone Number</b></p>
+                <span>
+                    <label>Email Address</label>
+                    <p>bianconner@mail.com</p>
+                </span>
+                <span>
+                    <label for>Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="phone">
+                </span>
+                <span>
+                    <a class="fa fa-square" id="square_1" onclick="changetoAccepted1()"></a>
+                    <p>I agree to be contacted through Whatsapp for Orded Updates</p>
+                </span>
+            </div>
+            <div id="address">
+                <p><b>Delivery Address</b></p>
+                <!-- <div id="saved_address">
+                    <label for>Saved Address</label>
+                    <input type="text" placeholder=" Choose Address">
+                </div> -->
+                <div id="add_address">
+                    <span>
+                        <label for>Name</label>
+                        <input type="text" placeholder="Name" id="name">
+                    </span>
+                    <span>
+                        <span>
+                            <label for>Address 1</label>
+                            <input type="text" placeholder="Address 1" id="address_1">
+                        </span>
+                        <span>
+                            <label for>Address 2</label>
+                            <input type="text" placeholder="Address 2" id="address_2">
+                        </span>
+                        <span>
+                            <label for>State</label>
+                            <input type="text" placeholder="Enter State" id="state">
+                        </span>
+                        <span>
+                            <label for>City</label>
+                            <input type="text" placeholder="Enter City" id="city">
+                        </span>
+                        <span>
+                            <label for>Country</label>
+                            <input type="text" placeholder="Enter Country" id="country">
+                        </span>
+                        <span>
+                            <label for>Pincode</label>
+                            <input type="text" placeholder="Pin Code" id="pincode">
+                        </span>
+                    </span>
+                    <span>
+                        <p> <b> Payment Deatails</b></p>
+                        <span>
+                            <a class="fa fa-square" id="square_2" onclick="changetoAccepted2()"></a>
+                            <p>Same as Shiiping Address</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div id="payment_option">
+                <p><b>Payment Deatails</b></p>
+                <span>
+                    <span id="credit_card" onclick="creditCardOpt()">
+                        <a class="fa fa-credit-card" ></a>
+                        <p>Credit/Debit Card</p>
+                    </span>
+                    <span id="net_banking" onclick="netBankingOpt()">
+                        <a class="fa fa-paypal" ></a>
+                        <p>Netbanking</p>
+                    </span>
+                    <span id="emi" onclick="emiOpt()">
+                        <a class="fa fa-dollar" ></a>
+                        <p>EMI</p>
+                    </span>
+                    <span id="upi" onclick="upiOpt()">
+                        <a class="fa fa-amazon" ></a>
+                        <p>Amazon UPI</p>
+                    </span>
+                </span>
+                <p>We accept all major all major credit and debit cards of Indian and International banks</p>
+                <button id="pay_now">Pay Now</button>
+            </div>
+        </div>
+        <div id="payment_detail">
+            <div id="cart_product">
+                <span>
+                    <p>1 x Product Name </p>
+                    <span>
+                        <span>
+                            <span>Delivery Date:</span>
+                            <p><b>August 20, 2022</b></p>
+                        </span>
+                        <p>₹8999</p>
+                    </span>
+                </span>
+                <p>Edit Cart</p>
+            </div>
+            <div id="subtotal">
+                <span>
+                    <p>Subtotal: <span>₹8999</span></p>
+                    <p>Shiiping Free</p>
+                </span>
+                <span>
+                    <p>Total: <span>₹59995</span></p>
+                    <p>Or 3 intrest free payments of <span>₹19998</span></p>
+                </span>
+                <span>
+                    <p>Get up to ₹500.00 OFF on your First Time Prepaid Order (COD Excluded) with coupon <span>PREPAID</span></p>
+                </span>
+                <span>
+                    <p>Got a promotional Code &quest; Use below</p>
+                </span>
+                <span>
+                    <input type="text" placeholder="Promotional Code">
+                    <button>Apply Code</button>
+                </span>
+                <span>
+                    <img src="meanbuy_slogan.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="checkout.js"></script>
