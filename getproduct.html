@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/getproduct.css" />
+    <title>Product Name</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- append navbar here -->
+    </div>
+
+    <div id="main">
+      <div id="nav_menu">
+        <a href="#">Home</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Accesories</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Mens</a>
+        <span style="color: grey; padding-top: 0.1%"> &gt;</span>
+        <a href="#">Watch</a>
+      </div>
+      <div id="main_content">
+        <!-- image slider starts here  -->
+
+        <div id="image_slider">
+          <div id="images"></div>
+          <div id="btn-slides">
+            <span class="btn_slider" onclick="btn_slider(1)"></span>
+            <span class="btn_slider" onclick="btn_slider(2)"></span>
+            <span class="btn_slider" onclick="btn_slider(3)"></span>
+          </div>
+          <div class="sliders" id="left">
+            <a class="fa fa-chevron-left" onclick="prevImage()"></a>
+          </div>
+          <div class="sliders" id="right">
+            <a class="fa fa-chevron-right" onclick="nextImage()"></a>
+          </div>
+        </div>
+        <!-- image slider ends here  -->
+        <!-- product info starts here  -->
+        <div id="product_info"></div>
+        <!-- product info ends here  -->
+      </div>
+      <div id="featured_products"></div>
+      <div id="review">
+        <h4>Review & Ratings</h4>
+        <div>
+          <a class="fa fa-star"></a>
+          <a class="fa fa-star"></a>
+          <a class="fa fa-star"></a>
+          <a class="fa fa-star"></a>
+          <a class="fa fa-star"></a>
+        </div>
+        <div>
+          <button>Overall services</button>
+          <button>Customer service</button>
+          <button>Product quality</button>
+          <button>Durability</button>
+        </div>
+        <div>
+          <input type="text" name="" placeholder="Start writting your review" />
+          <button>Submit</button>
+        </div>
+        <div>
+          <h4>Questions &quest;</h4>
+          <p>Contact us on &nbsp; <a class="fa fa-whatsapp"></a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="scripts/getproduct.js"></script>

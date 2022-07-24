@@ -1,0 +1,312 @@
+#main 
+{
+    /* border: 1px solid black; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+
+}
+
+
+#final_payment {
+    /* border: 1px solid black; */
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#final_payment > form
+{
+    display: flex;
+    width: 40%;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#final_payment > form input
+{
+    width: 80%;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+#final_payment > form #make_payment {
+    width: 25%;
+    outline: none;
+    border: transparent;
+    background-color: #F29541;
+    color: white;
+    /* background-color: red; */
+}
+#payment_form 
+{
+    /* border: 1px solid green; */
+    width: 50%;
+}
+#contact span:nth-child(3)
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#contact span:nth-child(3) input 
+{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0.3em;
+
+
+}
+#contact span:nth-child(4)
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* color: #FFA500; */
+}
+#contact span:nth-child(4) .fa
+{
+    color: #cdcdcd;
+    /* color: #FFA500; */
+}
+
+
+#add_address 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+#add_address > span:nth-child(1) 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#add_address > span:nth-child(1) input
+{
+    width: 80%;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0.3em;
+
+
+}
+
+#add_address > span:nth-child(2)
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 15px;
+    column-gap: 10px;
+}
+#add_address > span:nth-child(2) span
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#add_address > span:nth-child(2) span input 
+{
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 0.3em;
+
+
+}
+#add_address > span:nth-child(3)
+{
+    display: flex;
+    flex-direction: column;
+}
+#add_address > span:nth-child(3) span
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#add_address > span:nth-child(3) span .fa
+{
+    color: #cdcdcd;
+}
+
+
+#payment_option
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+#payment_option > span:nth-child(2)
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid maroon; */
+}
+#payment_option > span:nth-child(2) >span 
+{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    align-items: center;
+
+}
+#payment_option > span:nth-child(2) >span a
+{
+    color: #ffa500;
+    font-size: 50px;
+}
+#payment_option > span:nth-child(2) >span p
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+#payment_option > span:nth-child(2) + p
+{
+    text-align: center;
+    font-size: small;
+    color: #5D5F64;
+}
+#payment_option button 
+{
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    background-color: #ffa500;
+    border: transparent;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+#payment_detail
+{
+    width: 50%;
+    /* border: 1px solid green; */
+    padding: 15px;
+}
+#cart_product
+{
+    border-bottom: 1px solid black;
+    /* border: 1px solid maroon; */
+}
+#cart_product > span 
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #cdcdcd;
+    padding: 5px;
+}
+#cart_product > span > span
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+#cart_product > span > span > span
+{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+}
+#cart_product > span > span > span > span
+{
+    color: #F29541;
+    font-weight: 400;
+}
+#cart_product > p
+{
+    color: #F29541;
+    font-weight: 400;
+}
+
+#subtotal > span 
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 30px 0;
+}
+#subtotal > span:nth-child(1) > p:first-child
+{
+    /* border: 1px solid red; */
+    color: #5D5F64;
+    margin: 0;
+}
+#subtotal > span:nth-child(1) > p:first-child > span
+{
+    color: green;
+}
+#subtotal > span:nth-child(1) > p:nth-child(2)
+{
+    color: #F29541;
+    margin: 0;
+}
+#subtotal > span:nth-child(2) > p:first-child
+{
+    color: black;
+}
+#subtotal > span:nth-child(2) > p
+{
+    color: #5D5F64;
+    margin: 0;
+}
+#subtotal > span:nth-child(2) > p > span
+{
+    color: black;
+    font-weight: 400;
+}
+#subtotal > span:nth-child(3)
+{
+    /* border: 1px solid blue; */
+    font-size: 0.8em;
+    width: 50%;
+}
+#subtotal > span:nth-child(3) span 
+{
+    color: #F29541;
+}
+
+#subtotal > span:nth-child(4)
+{
+    /* border: 1px solid red; */
+    font-size: small;
+    padding: 0;
+    color: #5D5F64;
+}
+#subtotal > span:nth-child(5)
+{
+    display: flex;
+    flex-direction: row;
+}
+#subtotal > span:nth-child(5) input
+{
+    height: 30px;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 0.3em;
+}
+#subtotal > span:nth-child(5) button
+{
+    background-color: #ffa500;
+    border: transparent;
+    width: 18%;
+    color: white;
+}
+#subtotal > span:nth-child(6)
+{
+    display: flex;
+}

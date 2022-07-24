@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Make Payment</title>
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="nav_box1">
+            <a href ="index.html"> 
+            <img id="main_logo" src="https://d64lkarmo2mrq.cloudfront.net/baselogo.png"> </a>
+            <div id="search_box">
+                <input id="query" placeholder="Search" type="text">
+                <img id="search_button" src="https://icon-library.com/images/search-for-icon/search-for-icon-14.jpg">
+            </div>
+            
+            <div id="small_text">
+            <div class="s_text">Seller's Corner</div>
+            <div class="s_text">Feedback</div>
+            <div class="s_text">Blog</div>
+            <div id="s_text2">Delivery Info</div>
+            </div>
+           <img id="cart_logo" src="Picsart_22-07-20_21-36-09-062.png">
+           <p id="cart_count">0</p>
+           <!-- pop effect start here..... -->
+             <div id="menu">
+                <img id="cart_logo2" src="Picsart_22-07-20_22-01-04-131.png"><br>
+                
+                <div id="sub_menu">
+                    <p id="Sign_text">LOGGED IN AS:Rajesh Pradhan</p><br>
+                    <button id="order_text">Signup</button><br>
+                    <button id="signout_text">Signin</button>
+                </div>
+            </div>
+            
+          
+          </div>
+          <!-- box2 start here...... -->
+          <div id="nav_box2">
+          <div  class="dabra">
+          <p id="nav2_text1">Categories</p>
+          <div id="categories_box">
+             <div class="small_box" >
+                 <p class="big_text">MEN</p>
+                 <p class="small_text">Watches</p>
+                 <p class="small_text">Men's Watches</p>
+                 <p class="big_text">WOMEN</p>
+                 <p class="small_text">Makeup Accessories</p>
+                 <p class="small_text">Watches</p>
+             </div>
+             <div class="small_box" >
+              <p class="big_text">ELECTRONICS</p>
+              <p class="small_text">Gaming Accessories</p>
+              <p class="small_text">Keyboard & Mouse</p>
+              <p class="small_text">Small Appliances</p>
+             </div>
+             <div class="small_box" >
+              <p class="big_text">ESSENTIALS</p>
+              <p class="small_text">Men's Essentials</p>
+              <p class="small_text">Women Essentials</p>
+             </div>
+             <div class="small_box" >
+              <p class="big_text">FREEDOM SALE</p>
+              <p class="small_text">Flash Sale</p>
+             </div>
+             <div class="small_box" >
+              <p class="big_text">HOME & LIVING</p>
+              <p class="small_text">Bath & Storage</p>
+              <p class="small_text">Gardening</p>
+              <p class="small_text">Home Decor</p>
+              <p class="small_text">Home Improvment</p>
+              <p class="small_text">Kitchen Wares</p>
+              <p class="small_text">Nordic Ceilings Lights</p>
+              <p class="small_text">Pet Products</p>
+              
+             </div>
+             <div class="small_box" >
+              <p class="big_text">Kids & Mom</p>
+              <p class="small_text">Action Figures</p>
+              <p class="small_text">Discovery Adventure</p>
+              <p class="small_text">Disney</p>
+              <p class="small_text">Hello kity</p>
+              <p class="small_text">Kids Shoes</p>
+              <p class="small_text">Marvel</p>
+              <p class="small_text">Minions</p>
+              <p class="small_text">School Backpack</p>
+              
+             </div>
+             <div class="small_box" >
+              <p class="big_text">MEANBUY DEALS</p>
+              <p class="small_text">Gifts</p>
+              <p class="small_text">Electronics</p>
+              <p class="small_text">Men's Watches</p>
+              <p class="small_text">Smart Watches</p>
+              <p class="small_text">Top Selling Smart Watches</p>
+             </div>
+             <div class="small_box" >
+              <p class="big_text">MOBILES &amp; TABS</p>
+              <p class="small_text">Bluetooth Earphones</p>
+              <p class="small_text">Mobiles Accessories</p>
+              <p class="small_text">Sporting Bluetooth</p>
+              <p class="small_text">Wired Headphones</p>
+              <p class="small_text">Wireless Chargers</p>
+              <p class="small_text">Wireless Speaker</p>
+             </div>
+          </div>
+          </div>
+              <p id="nav2_text2" class="flash">Flash sell</p>
+              <p class="nav2_text Best">Best sell</p>
+              <p class="nav2_text">Shop by Brand</p>
+              <p class="nav2_text Trending">Trending</p>
+              <p class="nav2_text newarrival">New Arrivals</p>
+          </div>
+    </div>
+
+    <div id="main">
+        <div id="payment_form">
+
+            <div id="contact">
+                <p><b>Your Email &amp; Phone Number</b></p>
+                <span>
+                    <label>Email Address</label>
+                    <p>bianconner@mail.com</p>
+                </span>
+                <span>
+                    <label for>Phone Number</label>
+                    <input type="number" placeholder="Phone Number" id="phone">
+                </span>
+                <span>
+                    <a class="fa fa-square" id="square_1" onclick="changetoAccepted1()"></a>
+                    <p>I agree to be contacted through Whatsapp for Orded Updates</p>
+                </span>
+            </div>
+            <div id="address">
+                <p><b>Delivery Address</b></p>
+                <!-- <div id="saved_address">
+                    <label for>Saved Address</label>
+                    <input type="text" placeholder=" Choose Address">
+                </div> -->
+                <div id="add_address">
+                    <span>
+                        <label for>Name</label>
+                        <input type="text" placeholder="Name" id="name">
+                    </span>
+                    <span>
+                        <span>
+                            <label for>Address 1</label>
+                            <input type="text" placeholder="Address 1" id="address_1">
+                        </span>
+                        <span>
+                            <label for>Address 2</label>
+                            <input type="text" placeholder="Address 2" id="address_2">
+                        </span>
+                        <span>
+                            <label for>State</label>
+                            <input type="text" placeholder="Enter State" id="state">
+                        </span>
+                        <span>
+                            <label for>City</label>
+                            <input type="text" placeholder="Enter City" id="city">
+                        </span>
+                        <span>
+                            <label for>Country</label>
+                            <input type="text" placeholder="Enter Country" id="country">
+                        </span>
+                        <span>
+                            <label for>Pincode</label>
+                            <input type="text" placeholder="Pin Code" id="pincode">
+                        </span>
+                    </span>
+                    <span>
+                        <p> <b> Payment Deatails</b></p>
+                        <span>
+                            <a class="fa fa-square" id="square_2" onclick="changetoAccepted2()"></a>
+                            <p>Same as Shiiping Address</p>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div id="payment_option">
+                <p><b>Payment Deatails</b></p>
+                <span>
+                    <span id="credit_card" onclick="creditCardOpt()">
+                        <a class="fa fa-credit-card" ></a>
+                        <p>Credit/Debit Card</p>
+                    </span>
+                    <span id="net_banking" onclick="netBankingOpt()">
+                        <a class="fa fa-paypal" ></a>
+                        <p>Netbanking</p>
+                    </span>
+                    <span id="emi" onclick="emiOpt()">
+                        <a class="fa fa-dollar" ></a>
+                        <p>EMI</p>
+                    </span>
+                    <span id="upi" onclick="upiOpt()">
+                        <a class="fa fa-amazon" ></a>
+                        <p>Amazon UPI</p>
+                    </span>
+                </span>
+                <p>We accept all major all major credit and debit cards of Indian and International banks</p>
+                <button id="pay_now">Pay Now</button>
+            </div>
+        </div>
+        <div id="payment_detail">
+            <div id="cart_product">
+                <span>
+                    <p>1 x Product Name </p>
+                    <span>
+                        <span>
+                            <span>Delivery Date:</span>
+                            <p><b>August 20, 2022</b></p>
+                        </span>
+                        <p>₹8999</p>
+                    </span>
+                </span>
+                <p>Edit Cart</p>
+            </div>
+            <div id="subtotal">
+                <span>
+                    <p>Subtotal: <span>₹8999</span></p>
+                    <p>Shiiping Free</p>
+                </span>
+                <span>
+                    <p>Total: <span>₹59995</span></p>
+                    <p>Or 3 intrest free payments of <span>₹19998</span></p>
+                </span>
+                <span>
+                    <p>Get up to ₹500.00 OFF on your First Time Prepaid Order (COD Excluded) with coupon <span>PREPAID</span></p>
+                </span>
+                <span>
+                    <p>Got a promotional Code &quest; Use below</p>
+                </span>
+                <span>
+                    <input type="text" placeholder="Promotional Code">
+                    <button>Apply Code</button>
+                </span>
+                <span>
+                    <img src="images/meanbuyslogan.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="final_payment">
+        <h1>Enter Card Details</h1>
+        <form id="final_payment_form">
+            <input type="number" id="card_cvv" placeholder="Enter Card CVV">
+            <input type="password" id="card_password_1" placeholder="Enter Card Password">
+            <input type="password" id="card_password_2" placeholder="Enter card Password Again">
+            <input type="submit" value="Make Payment" id="make_payment">            
+        </form>
+    </div>
+
+    <div id="footer_container"></div>
+
+</body>
+</html>
+<script src="scripts/checkout.js">
+
+
+</script>
+
+<script type="module">
+   import footer from "./component/footer.js"
+
+   document.getElementById("footer_container").innerHTML=footer();
+
+
+</script>

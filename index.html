@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+
+<body>
+    <div id="navbar"></div>
+
+  <!-- <div id="result"></div> -->
+
+   <div id="main">
+    <div id="flex1">
+        <button id="l1">
+            <</button> <div id="slideshow">
+    </div><button id="r1">></button></div>
+    <div id="hr">Fast moving product___________________________________________________________________________________________________________________</div>
+    <div id="elem">
+        <div class="fast_product"></div>
+    </div>
+    <div id="hr">Home_Decor________________________________________________________________________________________________________________________</div>
+    <div class="home_product"></div>
+    <div id="flex1">
+        <button id="l">
+            <</button> <div id="company_slideshow">
+    </div><button id="r">></button></div>
+    <div id="hr">watch_product________________________________________________________________________________________________________________________</div>
+    <div class="watch_product"></div>
+    <div id="footer_container"></div>
+   </div>
+    
+</body>
+
+</html>
+<script type="module">
+    import navbar from "./component/navbar.js"
+    document.getElementById('navbar').innerHTML=navbar();
+
+    import footer from "./component/footer.js"
+    document.getElementById('footer_container').innerHTML=footer();
+
+    document.getElementById("order_text").addEventListener("click",myClick3);
+document.getElementById("signout_text").addEventListener("click",myClick4);
+
+document.querySelector(".flash").addEventListener("click",myClick5);
+
+
+function myClick3(){
+  window.location.href="register.html"
+}
+function myClick4(){
+  window.location.href="login.html";
+}
+function myClick5(){
+  window.location.href="product.html"
+}
+
+let userData = JSON.parse(localStorage.getItem("userData"));
+
+
+
+document.getElementById("Sign_text").innerText=(userData[0].email);
+
+
+
+
+let myClick = ()=>{
+        
+  
+  
+        let query = document.getElementById("query").value;
+      
+      
+        
+        if(query==="watch" || query==="Watch"){
+          localStorage.setItem("query",JSON.stringify(query));
+          window.location.href="search.html"
+        }
+        else if(query==="earphones" || query==="Earphone" || query==="earphone" || query==="headphone" || query==="headphones" || query==="earbuds" || query==="buds"){
+          localStorage.setItem("query",JSON.stringify(query));
+          window.location.href="search.html"
+        }
+        else{
+            alert("Product not available")
+            return
+        }
+      
+      
+      
+      }
+      
+      
+      
+      
+      
+      let keySearch = (e)=>{
+        if(e.key==="Enter"){
+           myClick();
+        }
+      }
+      
+      document.getElementById("search_button").addEventListener("click", myClick);
+      document.getElementById("query").addEventListener("keydown", keySearch);
+      
+      
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="scripts/index.js"></script>
