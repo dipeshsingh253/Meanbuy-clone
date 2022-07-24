@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div id="product-form">
+      <form id="add_form">
+        <h1>Create Array-Object</h1>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter Product Name"
+          required
+        />
+        <input type="text" id="image1" placeholder="Enter Product Images" />
+        <input type="text" id="image2" placeholder="Enter Product Images" />
+        <input type="text" id="image3" placeholder="Enter Product Images" />
+        <input type="text" id="price" placeholder="Enter Product Price" />
+        <input type="text" id="category" placeholder="Enter Product Category" />
+        <input type="text" id="offer" placeholder="Enter Product Offer" />
+        <input type="text" id="rating" placeholder="Enter Product Rating" />
+        <input type="text" id="summary" placeholder="Enter Product Summary" />
+        <input type="text" id="includes" placeholder="Enter Product Includes" />
+        <input type="text" id="features" placeholder="Enter Product Features" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  // let productArray = JSON.parse(localStorage.getItem("productData")) || [];
+  const form = document.querySelector("#add_form");
+  form.addEventListener("submit", addProduct);
+  async function addProduct(event) {
+    event.preventDefault();
+    console.log("Product added successfully");
+    const name = document.querySelector("#name").value;
+    const image1 = document.querySelector("#image1").value;
+    const image2 = document.querySelector("#image2").value;
+    const image3 = document.querySelector("#image3").value;
+    const price = document.querySelector("#price").value;
+    const offer = document.querySelector("#offer").value;
+    const rating = document.querySelector("#rating").value;
+    const summary = document.querySelector("#summary").value;
+    const includes = document.querySelector("#includes").value;
+    const features = document.querySelector("#features").value;
+    const category = document.querySelector("#category").value;
+    console.log(
+      name,
+      image1,
+      image2,
+      image3,
+      price,
+      offer,
+      rating,
+      summary,
+      includes,
+      features
+    );
+    let product = new Product(
+      name,
+      image1,
+      image2,
+      image3,
+      price,
+      offer,
+      rating,
+      summary,
+      includes,
+      features,
+      category
+    );
+    product = JSON.stringify(product);
+    let res = await fetch("http://127.0.0.1:3000/api/products", {
+      method: "POST",
+      body: product,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    // console.log(obj);
+    // productArray.push(obj);
+    // console.log(productArray);
+    // localStorage.setItem("productData", JSON.stringify(productArray));
+  }
+
+  class Product {
+    constructor(
+      name,
+      image1,
+      image2,
+      image3,
+      price,
+      offer,
+      rating,
+      summary,
+      includes,
+      features,
+      category
+    ) {
+      this.name = name;
+      this.image1 = image1;
+      this.image2 = image2;
+      this.image3 = image3;
+      this.price = price;
+      this.offer = offer;
+      this.rating = rating;
+      this.avaliable = true;
+      this.summary = summary;
+      this.includes = includes;
+      this.features = features;
+      this.category = category;
+    }
+  }
+</script>

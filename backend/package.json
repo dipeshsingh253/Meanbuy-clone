@@ -1,0 +1,16 @@
+{
+  "name": "backend-meanbuy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "vite": "^3.0.2"
+  }
+}
