@@ -6,6 +6,7 @@ Meanbuy is an Internation E-commerce site which allows user to order all kind of
 
 - [@dipeshsingh253 - Team Lead](https://www.github.com/dipeshsingh253)
 - [@Abhra11](https://www.github.com/Abhra11)
+- [@raje2](https://www.github.com/raje2)
 - [@Ashutosh5333](https://www.github.com/Ashutosh5333)
 - [@codersudhir](https://www.github.com/codersudhir)
 
